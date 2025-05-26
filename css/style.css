@@ -106,13 +106,15 @@ nav {
     padding: 20px 30px;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .logo {
-    padding-left: 0; /* Remove padding */
-    margin-left: -100px; /* Significantly increased negative margin to move logo much further left */
-    position: relative;
-    left: -50px; /* Additional positioning to move logo left */
+    position: absolute;
+    left: -80px; /* Significantly position further left on desktop */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Precise vertical centering */
+    z-index: 10; /* Ensure logo stays on top */
     transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition for fade effect */
 }
 
@@ -180,6 +182,7 @@ nav {
     visibility: hidden;
     z-index: 1100;
     pointer-events: none; /* Prevent interaction when hidden */
+    margin-left: auto; /* Push nav links to the right side */
 }
 
 .nav-links.active {
@@ -278,7 +281,7 @@ nav {
     display: block !important; /* Force display regardless of other styles */
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 20px; /* Keep the hamburger on the right side */
     z-index: 2000;
     background: transparent; /* Transparent background */
     padding: 10px;
@@ -1845,12 +1848,11 @@ nav {
     }
     
     .logo {
-        margin-left: -80px; /* Significantly increased negative margin for tablet */
-        left: -20px; /* Additional positioning for tablet */
+        left: 10px; /* Keep logo at left edge on mobile/tablet but visible */
     }
     
     .logo-image {
-        height: 70px; /* Increased significantly from 50px */
+        height: 70px; /* Adjusted height for tablet */
     }
     
     .hero-content h1 {
@@ -1873,12 +1875,11 @@ nav {
 
 @media (max-width: 480px) {
     .logo {
-        margin-left: -50px; /* Significantly increased negative margin for mobile */
-        left: -10px; /* Additional positioning for mobile */
+        left: 10px; /* Keep consistent on mobile */
     }
     
     .logo-image {
-        height: 60px; /* Increased significantly from 45px */
+        height: 60px; /* Adjusted height for mobile */
     }
     
     .hero-content h1 {
