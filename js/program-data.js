@@ -6,7 +6,7 @@ const programData = [
         shortDescription: "A comprehensive program designed to foster leadership skills among Tibetan youth.",
         dateAdded: "2025-05-01", // Add a date for sorting
         fullDescription: "A comprehensive 6-week program designed to foster leadership skills among Tibetan youth. Participants learn about effective communication, community organizing, project management, and advocacy skills.",
-        image: "images/programmes/leadership/DSC00773.JPG",
+        image: "images/Job-Readiness Training, CHTS/DSC00773.JPG",
         highlights: [
             "Practical leadership exercises and simulations",
             "Mentorship from established community leaders",
@@ -45,9 +45,9 @@ const programData = [
             }
         ],
         gallery: [
-            "images/programmes/leadership/DSC00773.JPG",
-            "images/programmes/leadership/DSC00714.JPG",
-            "images/programmes/leadership/DSC00870.JPG"
+            "images/Job-Readiness Training, CHTS/DSC00773.JPG",
+            "images/Job-Readiness Training, CHTS/DSC00714.JPG",
+            "images/Job-Readiness Training, CHTS/DSC00870.JPG"
         ],
         testimonials: [
             {
@@ -63,7 +63,7 @@ const programData = [
         shortDescription: "Hands-on training focused on developing practical digital skills that enhance employability.",
         dateAdded: "2025-04-15", // Earlier than leadership
         fullDescription: "A hands-on training program focused on developing practical digital skills that enhance employability in today's job market. Courses cover web development, digital marketing, graphic design, and data analysis.",
-        image: "images/programmes/digital/Graphic Design.JPG",
+        image: "images/Graphic Design/Graphic Design.JPG",
         highlights: [
             "Industry-relevant curriculum designed with input from tech professionals",
             "Hands-on projects and portfolio development",
@@ -101,10 +101,10 @@ const programData = [
             }
         ],
         gallery: [
-            "images/programmes/digital/Graphic Design.JPG",
-            "images/programmes/digital/Graphic Design 2.jpg",
-            "images/programmes/digital/DSC00716.JPG",
-            "images/programmes/cultural/DSC00399.JPG"
+            "images/Graphic Design/Graphic Design.JPG",
+            "images/Graphic Design/Graphic Design 2.jpg",
+            "images/Job-Readiness Training, CHTS/DSC00716.JPG",
+            "images/Nyingtobling TCC/DSC00399.JPG"
         ],
         testimonials: [
             {
@@ -112,64 +112,7 @@ const programData = [
                 author: "Pema T., Web Development Graduate"
             }
         ],
-        related: ["leadership", "cultural"]
-    },
-    {
-        id: "cultural",
-        title: "Cultural Heritage Program",
-        shortDescription: "An immersive program that connects Tibetan youth with their cultural heritage.",
-        dateAdded: "2025-03-20", // Earlier than digital
-        fullDescription: "An immersive program that connects Tibetan youth with their cultural heritage while developing practical skills. Participants learn traditional arts, language, history, and philosophy alongside contemporary professional skills.",
-        image: "images/programmes/cultural/DSC00389.JPG",
-        highlights: [
-            "Traditional Tibetan language and arts instruction",
-            "Historical and philosophical studies",
-            "Cultural preservation projects",
-            "Community engagement activities",
-            "Integration of traditional knowledge with modern skills",
-            "Field trips to cultural and historical sites"
-        ],
-        learningOutcomes: [
-            "Deeper understanding of Tibetan cultural heritage",
-            "Practical skills in traditional arts and crafts",
-            "Knowledge of Tibetan history and philosophy",
-            "Ability to integrate cultural knowledge with modern contexts",
-            "Completed cultural preservation project"
-        ],
-        details: {
-            duration: "8 weeks",
-            location: "Various settlements",
-            eligibility: "Tibetan youth aged 16-35",
-            batchSize: "30 participants",
-            nextBatch: "July 2025",
-            applicationDeadline: "May 31, 2025"
-        },
-        courseStructure: [
-            {
-                title: "Week 1-2: Foundations of Tibetan Culture",
-                description: "Introduction to Tibetan history, philosophy, and cultural traditions."
-            },
-            {
-                title: "Week 3-5: Traditional Arts and Practices",
-                description: "Hands-on training in traditional Tibetan arts, crafts, music, or cooking."
-            },
-            {
-                title: "Week 6-8: Cultural Preservation Projects",
-                description: "Development and implementation of cultural preservation and promotion projects."
-            }
-        ],
-        gallery: [
-            "images/programmes/culinary/Sushi making demo by the trainer.JPG",
-            "images/programmes/cultural/DSC00389.JPG",
-            "images/programmes/cultural/DSC00397.JPG"
-        ],
-        testimonials: [
-            {
-                quote: "This program helped me reconnect with my roots in a meaningful way. The skills I learned allow me to preserve and share our cultural heritage with others.",
-                author: "Yangchen L., 2023 Graduate"
-            }
-        ],
-        related: ["leadership", "digital"]
+        related: ["leadership"]
     },
     {
         id: "barista",
@@ -177,7 +120,7 @@ const programData = [
         shortDescription: "Professional coffee-making skills for career opportunities in the hospitality industry.",
         dateAdded: "2025-05-10", // Latest program - should appear first
         fullDescription: "A specialized training program that equips participants with the skills and knowledge needed to excel as professional baristas. The program covers coffee preparation techniques, customer service, cafe operations, and industry standards.",
-        image: "images/programmes/barista/DSC03536.JPG",
+        image: "images/Barista/DSC03474.JPG",
         highlights: [
             "Hands-on coffee preparation training",
             "Latte art and presentation techniques",
@@ -217,10 +160,10 @@ const programData = [
             }
         ],
         gallery: [
-            "images/programmes/barista/DSC03536.JPG",
-            "images/programmes/barista/DSC03449.JPG",
-            "images/programmes/barista/DSC03467.JPG",
-            "images/programmes/barista/DSC03474.JPG"
+            "images/Barista/DSC03536.JPG",
+            "images/Barista/DSC03449.JPG",
+            "images/Barista/DSC03467.JPG",
+            "images/Barista/DSC03474.JPG"
         ],
         testimonials: [
             {
@@ -236,7 +179,7 @@ const programData = [
         shortDescription: "Learn international and traditional cooking techniques for a career in culinary arts.",
         dateAdded: "2025-02-15", // Earlier program
         fullDescription: "An intensive culinary training program that combines international cooking techniques with traditional Tibetan cuisine. Students develop professional kitchen skills and food presentation techniques for careers in the restaurant industry.",
-        image: "images/programmes/culinary/Sushi Preparation.JPG",
+        image: "images/Sushi/Sushi Preparation.JPG",
         highlights: [
             "Hands-on cooking techniques across multiple cuisines",
             "Kitchen safety and sanitation standards",
@@ -276,10 +219,10 @@ const programData = [
             }
         ],
         gallery: [
-            "images/programmes/culinary/Sushi Preparation.JPG",
-            "images/programmes/culinary/Sushi making demo by the trainer.JPG",
-            "images/programmes/culinary/student's work.JPG",
-            "images/programmes/culinary/Korculonary Trainee at Auroville.jpeg"
+            "images/Sushi/Sushi Preparation.JPG",
+            "images/Sushi/Sushi making demo by the trainer.JPG",
+            "images/Sushi/student's work.JPG",
+            "images/Auroville/Korculonary Trainee at Auroville.jpeg"
         ],
         testimonials: [
             {
@@ -287,7 +230,7 @@ const programData = [
                 author: "Tenzin W., 2023 Graduate"
             }
         ],
-        related: ["barista", "cultural"]
+        related: ["barista"]
     },
     {
         id: "hairdressing",
@@ -295,7 +238,7 @@ const programData = [
         shortDescription: "Professional training in hair cutting, coloring, styling, and salon management.",
         dateAdded: "2025-01-10", // Earliest program
         fullDescription: "A comprehensive hairdressing program that covers all aspects of professional hair care, cutting, coloring, and styling. Participants also learn salon operations and client management for successful careers in the beauty industry.",
-        image: "images/programmes/hairdressing/Hair styling by trainer.JPG",
+        image: "images/Hairdressing/Hair styling by trainer.JPG",
         highlights: [
             "Professional hair cutting techniques",
             "Hair coloring and chemical treatments",
@@ -335,8 +278,8 @@ const programData = [
             }
         ],
         gallery: [
-            "images/programmes/hairdressing/Hair styling by trainer.JPG",
-            "images/programmes/hairdressing/Hair coloring by the students.JPG"
+            "images/Hairdressing/Hair styling by trainer.JPG",
+            "images/Hairdressing/Hair coloring by the students.JPG"
         ],
         testimonials: [
             {

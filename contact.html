@@ -17,7 +17,7 @@
         <nav>
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/YES_logo.svg" alt="YES+" class="logo-image">
+                    <img src="images/YES+ CTA Logo.png" alt="YES+" class="logo-image">
                 </a>
             </div>
             <button class="hamburger" aria-label="Toggle Menu">
@@ -56,7 +56,18 @@
             <div class="contact-grid">
                 <div class="contact-form">
                     <h2>Send Us a Message</h2>
-                    <form name="contact" method="POST" data-netlify="true">
+                    
+                    <!-- Thank you message (hidden by default) -->
+                    <div id="thank-you-message" class="thank-you-message" style="display: none;">
+                        <div class="thank-you-content">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Thank You!</h3>
+                            <p>Your message has been sent successfully. We'll get back to you as soon as possible at the email address you provided.</p>
+                            <button type="button" class="btn-small" onclick="resetForm()">Send Another Message</button>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" name="contact" method="POST" data-netlify="true">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" required>
@@ -89,7 +100,6 @@
                     <div class="info-item">
                         <h3>Contact Details</h3>
                         <p><strong>Email:</strong> yes@tibet.net</p>
-                        <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
                         <p><strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM</p>
                     </div>
                 </div>
@@ -118,7 +128,6 @@
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
                     <p>Email: yes@tibet.net</p>
-                    <p>Phone: +91-XXXXXXXXXX</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/share/16pi9b8Fr5/?mibextid=wwXIfr" class="social-icon facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/cta.yesplus" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
@@ -133,5 +142,29 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Contact form submission handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+            
+            // Simulate form submission (replace with actual submission logic)
+            setTimeout(function() {
+                // Hide the form
+                document.getElementById('contact-form').style.display = 'none';
+                
+                // Show thank you message
+                document.getElementById('thank-you-message').style.display = 'block';
+                
+                // Reset form fields
+                document.getElementById('contact-form').reset();
+            }, 500); // Small delay to simulate processing
+        });
+        
+        // Function to reset form and show it again
+        function resetForm() {
+            document.getElementById('contact-form').style.display = 'block';
+            document.getElementById('thank-you-message').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
